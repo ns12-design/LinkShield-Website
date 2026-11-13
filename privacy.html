@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy — LinkShield</title>
+<style>body{font-family:Arial,sans-serif;line-height:1.7;color:#203342;max-width:850px;margin:48px auto;padding:0 22px}h1,h2{color:#173b57}a{color:#147a62}</style></head><body>
+<p><a href="index.html">← Back to LinkShield</a></p><h1>LinkShield Privacy Policy</h1><p><strong>Last updated:</strong> 14 November 2026</p>
+<p>LinkShield is a Gmail add-on that analyses individual website URLs found in the Gmail message currently opened by the user. This page describes the data handling intended by the current project implementation.</p>
+<h2>Information accessed</h2><p>When a user opens a message with LinkShield, the add-on accesses the current message content to identify website URLs. The add-on also displays the message subject and sender in its interface. The user chooses which detected URL to analyse.</p>
+<h2>Information sent for analysis</h2><p>When the user requests an analysis, the selected URL is sent to the LinkShield backend hosted on Render. The backend performs heuristic URL checks and submits the URL to URLhaus for a threat-intelligence lookup. The analysis response is returned to the add-on.</p>
+<h2>Information not required for URL analysis</h2><p>The current backend analysis request is designed to send the selected URL, not the full email body, message subject, sender address, Gmail password, or email attachments.</p>
+<h2>Third-party services</h2><p>LinkShield relies on Google Apps Script and Gmail for the add-on experience, Render for backend hosting, and URLhaus for threat-intelligence lookups. Those services process data according to their own terms and privacy policies. A URL submitted for analysis is disclosed to the backend and URLhaus.</p>
+<h2>Storage and retention</h2><p>The project returns analysis results to the add-on. This policy does not promise that infrastructure providers retain no operational logs. Users should consult the relevant providers’ policies for their retention practices.</p>
+<h2>Security and limitations</h2><p>The backend uses an API key to authenticate requests from the add-on. Users should not share credentials or API keys. A URL reported as “NOT_LISTED” by URLhaus is not confirmed safe. LinkShield provides risk indicators and does not block Gmail’s native link-click action.</p>
+<h2>Contact</h2><p>For questions about this project, contact the developer using the email address published in the LinkShield Google Workspace Marketplace listing.</p>
+</body></html>
